@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <div class="timer">
+            <div class="controls">
+                <input type="number" id="duration" value="30" />
+                <div>
+                    <button id="start">
+                        <img src="./play.svg" alt="" />
+                    </button>
+                    <button id="pause">
+                        <img src="./pause.svg" alt="" />
+                    </button>
+                </div>
+            </div>
+            <svg class="dial">
+                <circle
+                    r="180"
+                    cx="190"
+                    cy="190"
+                    fill="transparent"
+                    stroke="blue"
+                    stroke-width="15"
+                    transform="rotate(-90 190 190)"
+                />
+            </svg>
+        </div>
+        <script src="./timer.js"></script>
+        <script src="./index.js" charset="utf-8"></script>
+    </body>
+</html>
